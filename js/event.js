@@ -23,3 +23,8 @@ makeBlue.onclick = function blue() {
   document.body.style.backgroundColor = "blue";
 };
  */
+
+const purple = document.getElementById("purple");
+purple.addEventListener("click", () => {
+  document.body.style.backgroundColor = "purple";
+});
