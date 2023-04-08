@@ -28,3 +28,14 @@ const purple = document.getElementById("purple");
 purple.addEventListener("click", () => {
   document.body.style.backgroundColor = "purple";
 });
+
+// final solution
+document.getElementById("green").addEventListener("click", () => {
+  document.body.style.backgroundColor = "green";
+});
+
+document.getElementById("update-input").addEventListener("click", (e) => {
+  const inputText = document.getElementById("input").value;
+  const pText = document.getElementById("input-text");
+  pText.innerText = inputText;
+});
