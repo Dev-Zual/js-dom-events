@@ -35,7 +35,9 @@ document.getElementById("green").addEventListener("click", () => {
 });
 
 document.getElementById("update-input").addEventListener("click", (e) => {
-  const inputText = document.getElementById("input").value;
+  const inputField = document.getElementById("input");
+  const inputText = inputField.value;
   const pText = document.getElementById("input-text");
   pText.innerText = inputText;
+  inputField.value = "";
 });
