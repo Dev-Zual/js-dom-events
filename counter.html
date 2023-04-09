@@ -9,17 +9,18 @@
   <body>
     <h1>counter app with DOM</h1>
     <h1 id="display">0</h1>
-    <button id="sub">-</button><button id="sum">+</button>
+    <button id="sub" onclick="minus()">-</button
+    ><button onclick="sum()" id="sum">+</button>
     <script>
       let count = 0;
-      document.getElementById("sum").addEventListener("click", function () {
-        count += 1;
+      function minus() {
+        count--;
         control("display");
-      });
-      document.getElementById("sub").addEventListener("click", function () {
-        count -= 1;
+      }
+      function sum() {
+        count++;
         control("display");
-      });
+      }
       function control(id) {
         document.getElementById(id).innerText = count;
       }
