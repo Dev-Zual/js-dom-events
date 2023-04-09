@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>change image with mouse over</title>
+  </head>
+  <body>
+    <h1>change image with mouse over</h1>
+    <img
+      src="tripod.png"
+      onmouseover="newImg(this)"
+      onmouseout="oldImg(this)"
+      alt=""
+    />
+    <script>
+      function newImg(img) {
+        img.src = "single-light.png";
+      }
+      function oldImg(img) {
+        img.src = "./tripod.png";
+      }
+    </script>
+  </body>
+</html>
