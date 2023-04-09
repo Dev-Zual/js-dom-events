@@ -11,19 +11,18 @@
     <h1 id="display">0</h1>
     <button id="sub">-</button><button id="sum">+</button>
     <script>
+      let count = 0;
       document.getElementById("sum").addEventListener("click", function () {
-        const num = document.getElementById("display");
-        let val = parseInt(num.innerText);
-
-        const changeVal = (val += 1);
-        num.innerText = changeVal;
+        count += 1;
+        control("display");
       });
       document.getElementById("sub").addEventListener("click", function () {
-        const num = document.getElementById("display");
-        let val = parseInt(num.innerText);
-        const changeVal = (val -= 1);
-        num.innerText = changeVal;
+        count -= 1;
+        control("display");
       });
+      function control(id) {
+        document.getElementById(id).innerText = count;
+      }
     </script>
   </body>
 </html>
